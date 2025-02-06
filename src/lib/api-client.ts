@@ -1,8 +1,7 @@
 import axios from 'axios';
 import type { Shipment } from '../types/shipping';
 
-// Get the API URL from environment variables or fallback to localhost:8000
-// In production, this will be the Railway.app backend URL
+// Get the API URL from environment variables or use local development URL
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 
 // Create an axios instance with default configuration
